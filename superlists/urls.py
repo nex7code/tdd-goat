@@ -20,4 +20,5 @@ from lists import views
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('',views.home_page, name='home'), # django 2.0 no need for r'^$'
+    path(r'lists/the-only-list-in-the-world/', views.view_list, name='view_list'),
 ]
