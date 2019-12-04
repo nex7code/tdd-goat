@@ -12,6 +12,7 @@ class NewVisitorTest(LiveServerTestCase):
 		self.browser = webdriver.Chrome(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
 
 	def tearDown(self):
+		self.browser.refresh()
 		self.browser.quit()
 
 	def wait_for_row_in_list_table(self, row_text):
